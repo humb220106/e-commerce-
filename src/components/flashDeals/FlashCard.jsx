@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHeart, faLongArrowAltLeft, faLongArrowAltRight, faPlus, faStar} from '@fortawesome/free-solid-svg-icons';
 import Slider from "react-slick";

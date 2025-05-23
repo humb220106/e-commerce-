@@ -1,4 +1,3 @@
-import React from 'react';
 import logo from "../assets/images/logo.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faUser, faShoppingBag } from '@fortawesome/free-solid-svg-icons'; 

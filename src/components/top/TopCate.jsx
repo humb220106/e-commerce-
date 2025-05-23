@@ -1,4 +1,4 @@
-import React from "react"
+
 import "./Style.css"
 import TopCart from "./TopCart"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
