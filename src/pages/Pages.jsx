@@ -23,4 +23,4 @@ const Pages = ({ productItems, cartItem, addToCart, shopItems}) => {
   )
 }
 
-export default Pages
+export default Pages 
