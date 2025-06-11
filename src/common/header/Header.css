@@ -205,6 +205,128 @@ header ul li a:hover{
       height: 60px; 
       line-height: 60px;
    }
+
+   /* ...existing code... */
+
+/* Mobile responsiveness for header and search */
+@media (max-width: 600px) {
+  .head {
+    padding: 8px 0;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .head label {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .search {
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search .logo img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .search .width,
+  .search-box {
+    width: 100% !important;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .search-box {
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+  }
+
+  .search-box svg,
+  .search-box span {
+    padding: 10px 8px;
+    font-size: 16px;
+  }
+
+  .search-box input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .cart {
+    margin-top: 10px;
+  }
+
+  .categories {
+    padding: 0 10px;
+    height: auto;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .categories span {
+    font-size: 22px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+
+  .categories h4 {
+    margin-top: 6px;
+    font-size: 15px;
+  }
+
+  header {
+    height: auto;
+    min-height: 50px;
+  }
+
+  header ul {
+    line-height: 40px;
+    padding-top: 10px;
+  }
+
+  header ul li {
+    margin-left: 0;
+    font-size: 14px;
+  }
+}
+
+/* ...existing code... */
+   .nav-links-MobileMenu li a{
+      padding: 0 20px;
+      font-size: 18px;
+      color: #000;
+      font-weight: 500;
+   }
+
+   .nav-links-MobileMenu li a:hover{
+      color: #e94560;
+   }
+
+   .search.active .logo img{
+      width: 100px;
+      height: auto;
+   }
+
+   .search.active .width{
+      width: 30%;
+   }
+
+   .search.active .search-box{
+      width: 70%;
+      margin-left: -50px; 
+   }
+
+   .search.active .search-box svg,
+   .search.active .search-box span{
+      width: 10%;
+   }
 }
 
 
