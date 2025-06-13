@@ -1,7 +1,8 @@
-import logo from "../assets/images/logo.svg";
+import logo1 from "../assets/images/logo1.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faUser, faShoppingBag } from '@fortawesome/free-solid-svg-icons'; 
 import { Link } from 'react-router-dom';
+
 
 const Search = ({cartItem}) => {
   window.addEventListener('scroll', function () {
@@ -13,8 +14,8 @@ const Search = ({cartItem}) => {
     <>
       <section className='search'>
         <div className='container c_flex'>
-          <div className='logo width'>
-            <img src={logo} alt='' />
+          <div className='logo-width'>
+             <img src={logo1} alt='' style={{ width: "80px", height: "auto" }} />
           </div>
 
           <div className='search-box f_flex'>
