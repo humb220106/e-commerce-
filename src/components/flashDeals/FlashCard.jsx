@@ -1,7 +1,7 @@
 import  { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHeart, faLongArrowAltLeft, faLongArrowAltRight, faPlus, faStar} from '@fortawesome/free-solid-svg-icons';
-import Slider from "react-slick";
+import Slider from "react-slick";   
 
 
 const NextArrow =(props) =>{
@@ -43,9 +43,32 @@ const FlashCard = ( {productItems, addToCart}) => {
       slidesToShow: 4,
       slidesToScroll: 1, 
       nextArrow:<NextArrow/>,
-      prevArrow:<PrevArrow/>
+      prevArrow:<PrevArrow/>,
+     responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+};
 
-   }
   return (
     <>
       <Slider {...settings}>
@@ -86,7 +109,6 @@ const FlashCard = ( {productItems, addToCart}) => {
      </Slider>
     </>
   )
-
 }
 
 export default FlashCard

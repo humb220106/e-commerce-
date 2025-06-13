@@ -57,3 +57,24 @@
 .shop .product:hover {
   box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
 }
+
+/* Make shop section responsive */
+@media (max-width: 768px) {
+  .shop .container {
+    flex-direction: column;
+  }
+  
+  .shop .contentWidth {
+    width: 100%;
+  }
+  
+  .grid1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid1 {
+    grid-template-columns: 1fr;
+  }
+}

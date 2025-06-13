@@ -292,3 +292,36 @@ button{
    grid-template-columns: repeat(4, 1fr);
    grid-gap:10px;
 }
+
+/* Add these responsive grid styles */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .d_flex, .c_flex {
+    flex-direction: column;
+  }
+  
+  .row {
+    width: 100%;
+  }
+}

@@ -297,6 +297,42 @@ header ul li a:hover{
     font-size: 14px;
   }
 }
+/* Add these responsive styles to improve mobile experience */
+@media (max-width: 768px) {
+  .search .container {
+    flex-direction: column;
+  }
+  
+  .search .logo-width {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .search-box {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 15px;
+  }
+  
+  .icon.f_flex.widith {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .head .container {
+    flex-direction: column;
+  }
+  
+  .head .left-row, .head .right-row {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
 
 /* ...existing code... */
    .nav-links-MobileMenu li a{
